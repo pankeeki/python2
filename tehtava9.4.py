@@ -29,7 +29,7 @@ class Auto:
 def kisa():
     autot = []
     for i in range(0,10):
-        autot.append(Auto(f"ABC.{i+1}", random.uniform(100, 200)))
+        autot.append(Auto(f"ABC-{i+1}", random.uniform(100, 200)))
 
     while (True):
         for auto in autot:
@@ -39,12 +39,7 @@ def kisa():
             if auto.getkuljettu() >= 1000:
                 return autot
 
-auto1 = Auto("ABC-123", 142)
-print(vars(auto1))
-auto1.kiihdytä(30)
-auto1.kiihdytä(70)
-auto1.kiihdytä(50)
-print(auto1.getatmnopeus())
+
 
 for auto in kisa():
-    print(vars(auto))
+    print(f'{auto.rekkari}, {auto.hnopeus:.2f} km/h huippunopeus, {auto.atmnopeus:.2f} km/h nykyinen nopeus, {auto.kuljettu:.2f} km ajettu')

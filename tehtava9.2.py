@@ -1,6 +1,7 @@
 class Auto:
     kuljettu = 0
     atmnopeus = 0
+
     def __init__(self, rekkari, hnopeus, atmnopeus, kuljettu):
         self.rekkari = rekkari
         self.hnopeus = hnopeus
@@ -21,10 +22,10 @@ class Auto:
 auto1 = Auto("ABC-123", 142, 0, 0)
 print(vars(auto1))
 auto1.kiihdytä(30)
-print(vars(auto1))
+print(auto1.atmnopeus)
 auto1.kiihdytä(70)
-print(vars(auto1))
+print(auto1.atmnopeus)
 auto1.kiihdytä(50)
-print(vars(auto1))
+print(auto1.atmnopeus)
 auto1.kiihdytä(-200)
 print(auto1.atmnopeus)
