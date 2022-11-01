@@ -24,6 +24,6 @@ class Hissi:
                     self.kerros_alas()
             print("Perille päästy.")
 
-h = Hissi(0, 15, 0)
-h.siirry_kerrokseen(6)
-h.siirry_kerrokseen(h.alin)
+#h = Hissi(0, 15, 0)
+#h.siirry_kerrokseen(6)
+#h.siirry_kerrokseen(h.alin)

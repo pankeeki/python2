@@ -11,7 +11,7 @@ class Talo:
             self.hissilista.append(Hissi(alin, ylin, 0))
 
     def aja_hissia(self, hissiluku, tavoite):
-        self.hissilista[hissiluku - 1].siirry_kerrokseen(tavoite)
+        self.hissilista[hissiluku].siirry_kerrokseen(tavoite)
 
     def palohalytys(self):
         for i in range(0, len(self.hissilista)):
